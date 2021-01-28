@@ -1,0 +1,179 @@
+<html>
+<head>
+    <link rel="stylesheet" href= "msp%20task.css">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    
+    <title> </title>
+    <script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=500,height=400')
+  message = "<ul><li><b>Full Name: </b>" + document.form1.fullname.value;
+  message += "<li><b>User Name: </b>" + document.form1.username.value;
+  message += "<li><b>E-mail: </b>" + document.form1.email.value;
+  message += "<li><b>Phone Number: </b>" + document.form1.phonenumber.value;
+  message += "<li><b>Your Age: </b>" + document.form1.age.value
+  message += "<li><b>Date of Birth: </b>" + document.form1.date.value
+  message += "<li><b>Your Country: </b>" + document.form1.country.value
+  message += "<li><b>Your University: </b>" + document.form1.university.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+    
+</head>
+    
+<body>
+<div class="div1">
+    <img src="12642836_1247036028657852_2207151975155518273_n-0123.jpeg" height="95px" width="450px">
+</div>
+<div class="div2">
+    <p class="p1"> Create your MSP account</p>
+    <p class="p2">Start your journey in MSP Tech Club</p>
+</div>
+    
+<div class="main">
+<form name="form1"> <br>
+<p style="color:rgb(107, 160, 35); font-size: 18px;margin-top: -4px; font-family: Arial, Helvetica, sans-serif "> &#8680; Enter the following information. When you click Submit, the data you entered will be displayed in a new window.</p>
+    
+<h4>Account</h4>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input id="input_text" type="Full Name" placeholder=" Full Name" name="fullname">
+</div> <br>
+    
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input id="input_text" type="User Name" placeholder=" User Name" name="username">
+</div> <br>
+    
+<div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input id="input_text" type="Email" placeholder="Email" height="200px" name="email">
+</div> <br>
+    
+<div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input id="input_text" type="Password" placeholder="Password">
+</div> <br>
+  
+    
+<h4>Phone Number</h4>
+<div class="input-container">
+<i class="fas fa-mobile-alt icon"></i>
+<input id="input_text" type="tel"placeholder="201*********" name="phonenumber">  
+</div>
+    
+    
+<h4>Age</h4>
+<div class="input-container">
+<i class="fas fa-user-clock icon"></i> 
+<input id="input_text" type="number" placeholder="0" name="age">  
+</div>
+  
+    
+<h4>Date of Birth</h4>
+<div class="input-container">
+<i class='far fa-calendar-alt icon'></i>
+<input id="input_text" type="date" name="date">  
+</div>
+
+<h4>Country</h4>
+<div class="input-container">
+<i class="fas fa-flag icon"></i>
+<select class="country" style="color:#D3D3D3" name="country">
+<option selected>Your Country</option>
+<option value="England">England</option>
+<option value="Belgium">Belgium</option>
+<option value="Egypt">Egypt</option>
+<option value="Canada">Canada</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Greece">Greece</option>
+<option value="Japan">Japan</option>
+<option value="China">China</option>
+<option value="Netherlands">Netherlands</option>
+</select><br>
+</div> 
+    
+    
+ 
+<h4>University</h4>
+<div class="input-container">
+<i class="fas fa-university icon"></i>
+<select class="university" style="color:#D3D3D3" name="university">
+<option selected>Your University</option>
+<option value="Cairo">Cairo</option>
+<option value="Ain Shams">Ain Shams</option>
+<option value="Helwan">Helwan</option>
+</select>
+</div>
+
+
+ 
+<h4 style="display: inline-block;font-size: 20PX">Select your gender:</h4>
+<div style="margin-left:3px;padding-top: 30px; display: inline-block">
+<span>
+    <input type="radio" id="male" name="test" checked><label class="male" for="male">Male </label>
+  </span>
+  <span>
+    <input type="radio" id="female" name="test"><label class="female" for="female">Female </label>
+  </span>
+</div> <br>
+    
+<details>
+   
+    <summary style="font-size: 17px; color:rgb(107, 170, 35);font-family: Arial, Helvetica, sans-serif " id="Terms and Conditions"><b>Terms and Conditions</b></summary>
+    <p style="color:white;font-size: 15px"  > 
+    We don't sell your personal data to advertisers, and we don't share information that directly identifies you'such as your name, email address or other contact information' with advertisers unless you give us specific permission. Instead, advertisers can tell us things such as the kind of audience that they want to see their ads, and we show those ads to people who may be interested. We provide advertisers with reports about the performance of their ads that help them understand how people are interacting with their content.
+    </p>
+    
+</details>
+    
+    <br>
+<input type="checkbox" style="display: inline"><P style="display: inline; color:#808080 " >I accept the
+    Terms and Conditions for signing up to this service, and hereby confirm I have read the privacy policy. </P>
+<br><br> 
+<input id="input_text" type="submit" value="Submit" onClick="display();">
+<input id="input_text" type="Reset" value="Reset">
+</form>
+    
+</div>
+    
+    <div style="background-color: rgb(0,160,210);margin-top: 180px">
+    
+    <h3 style="text-align: center;color:white;font-size: 30px;font-family:cursive" class="h">Become one of MSP members</h3>
+    <p style="font-family:cursive;text-align: center;font-size: 18px;margin-top: -20px">MSP Tech Club is one of the best student activity in Egypt</p>
+ <center>      
+     <a style="color:white;font-size: 30px;font-family: cursive;font-weight: 600;text-decoration: none" href="https://www.google.com.eg/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%88+%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1+%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%89+%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AD/@30.0313294,31.2107191,15z/data=!4m5!3m4!1s0x0:0xb2a6ce4702edc3da!8m2!3d30.0313294!4d31.2107191?hl=ar">Our Location</a></center>
+        
+        <p style="font-family:cursive;text-align: center;font-size: 18px;margin-top: 4px">5 Dr. Ahmed Zewail Street, Orman, Giza, Egypt</p>
+        
+         <h3 style="text-align: center;color: white;font-size: 30px;font-family:cursive" class="h">Contact Us</h3>
+        
+        <center>
+     <a href="https://www.facebook.com/MSPCU/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/MSPFayoumClup" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/msp-tech-club-cairo-university-767675175" target="_blank" class="fa fa-linkedin"></a>
+        
+        
+        
+        </center>
+
+        
+        
+        </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
